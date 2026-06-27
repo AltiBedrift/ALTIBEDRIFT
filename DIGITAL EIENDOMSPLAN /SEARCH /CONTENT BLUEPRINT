@@ -1,0 +1,363 @@
+CONTENT BLUEPRINT — Altibedrift / HAUT FORVALTING AS
+1. Kort innholdsdom
+Altibedrift bør bygges som en smal, beslutningsorientert digital eiendom rundt posisjonen:
+Praktisk digital vekst for SMB gjennom web, AI og strategi.
+Fase 1 skal ikke prøve å dekke “alt digitalt”. Den skal hjelpe SMB-ledere, eiere og daglige ledere å forstå hva som bør prioriteres først, hvorfor web, AI og strategi henger sammen, og hvordan de kan ta neste steg gjennom AI-modenhetstest, ROI-kalkulator eller digital vurdering / strategisamtale.
+Strukturen bør være authority-ledet, ikke coverage-ledet. Det betyr få, tydelige flater med lav risiko for overclaiming.
+2. Anbefalt fase 1 side-/flatekart
+Flate
+Type
+Rolle
+Primær målgruppe
+Primær intensjon
+Risiko
+Anbefaling
+Praktisk digital vekst for SMB
+Side / hovedflate
+Hovedposisjon og inngang
+SMB-ledere, eiere, daglige ledere
+Forståelse og beslutning
+Kan bli for bred
+Bruk som forside / hovedflate
+Web + AI + strategi
+Seksjon
+Forklare leveransemodell
+SMB-beslutningstakere
+Differensiering
+Kan splitte identiteten
+Bruk som sentral modellseksjon, ikke egen side i fase 1
+Webutvikling med forretningsfokus
+Side
+Kommersiell tjenesteflate
+SMB med nettsidebehov
+Kjøp / vurdering
+Webbyrå-risiko
+Egen fase 1-side, alltid koblet til strategi, konvertering og forbedring
+Praktisk AI for SMB
+Side
+Differensierende tjenesteflate
+SMB som vurderer AI
+Vurdering / kjøp
+AI-hype
+Egen fase 1-side, nøktern og modenhetsorientert
+AI-modenhetstest
+Verktøy
+Startpunkt for AI-vurdering
+SMB-ledere og daglige ledere
+Avklaring
+Må være reelt verktøy
+Egen verktøyflate
+ROI-kalkulator
+Verktøy
+Beslutningsstøtte
+Eiere og daglige ledere
+Prioritering
+Kan tolkes som garanti
+Egen verktøyflate med forbehold
+Digital vurdering / strategisamtale
+CTA / kontaktflyt
+Konverteringsbro
+Varme leads
+Kontakt / avklaring
+Kan over-love rådgivning
+Bruk som global CTA og kontaktflate
+Om Altibedrift / entity-trust
+Side
+Juridisk og tillitsmessig avklaring
+Alle vurderende kjøpere
+Trygghet
+Proof kan overdrives
+Egen nøktern trust-side
+Kontakt
+Side / CTA
+Innsending og forventningsstyring
+Beslutningsklare brukere
+Handling
+Uklar henvendelse
+Egen kontaktflate koblet til vurdering
+Bergen / Vestland / Norge
+Seksjon / trust-kontekst
+Geo-tillit
+Lokale og nasjonale SMB-er
+Trygghet
+Geo-overclaiming
+Ikke egne landingssider
+Cases / referanser
+Vent
+Proof
+Kjøpere nær beslutning
+Tillit
+Mangler godkjenning
+Ikke bygg i fase 1
+Blogg / guider
+Vent
+Authority
+Informasjonssøkere
+Læring
+Kan bli generisk
+Ikke bygg som v1-hovedgrep
+
+3. Anbefalt informasjonsarkitektur
+Brukerreisen bør gå slik:
+Besøkeren kjenner digital usikkerhet: nettsiden fungerer ikke godt nok, AI virker uklart, prioritering mangler.
+Hovedflaten forklarer at problemet ikke løses isolert med “ny nettside” eller “AI”, men med web, AI og strategi i sammenheng.
+Besøkeren velger relevant spor: webutvikling, praktisk AI eller vurderingsverktøy.
+Verktøyene gir et lavterskel beslutningsgrunnlag: AI-modenhetstest eller ROI-kalkulator.
+Resultatet leder til digital vurdering / strategisamtale.
+Om-/trust-flaten forklarer hvem Altibedrift er, med HAUT FORVALTING AS som juridisk rotentity og Bergen som lokal tillitsforankring.
+4. Forside / hovedflate blueprint
+Rolle: etablere hovedposisjon og styre brukeren videre.
+Seksjoner i rekkefølge:
+Hero
+ Mål: etablere Altibedrift som praktisk digital vekstpartner for SMB.
+ CTA: digital vurdering / strategisamtale.
+ Sekundær CTA: AI-modenhetstest eller ROI-kalkulator.
+Problem / digital usikkerhet
+ Mål: vise gjenkjennelige SMB-problemer: svak nettside, uklar AI-bruk, lav synlighet, manglende prioritering.
+Web + AI + strategi som samlet modell
+ Mål: forklare at virkemidlene henger sammen.
+ Internlenker: webutvikling, praktisk AI, kontakt.
+Hvem dette passer for
+ Mål: avgrense mot SMB-ledere, eiere og daglige ledere med behov for praktisk gjennomføring og prioritering.
+Hvem dette ikke passer for
+ Mål: avgrense mot lavpris nettsideproduksjon, reklamebyråbehov, enterprise-transformasjon og forventning om garanterte resultater.
+Tre innganger
+ Mål: lede til webutvikling, praktisk AI og verktøy.
+ Internlenker: webside, AI-side, AI-modenhetstest, ROI-kalkulator.
+Prosess / arbeidsmåte
+ Mål: vurdering, prioritering, gjennomføring, drift og forbedring.
+Trust / entity
+ Mål: forklare Altibedrift, HAUT FORVALTING AS, Bergen, Vestland og digital leveranse i Norge nøkternt.
+FAQ
+ Mål: svare på hovedspørsmål om web, AI, strategi og digital vurdering.
+Avsluttende CTA
+ Mål: sende bruker til digital vurdering / kontakt.
+Plassholdere:
+ hero_title, hero_subtitle, primary_cta, secondary_cta, problem_points, model_intro, web_ai_strategy_points, fit_for, not_fit_for, process_steps, trust_points, geo_context, faq_questions, closing_cta.
+5. Webutvikling med forretningsfokus blueprint
+Vinkling: nettside som beslutnings-, tillits- og konverteringsflate, ikke bare design eller produksjon.
+Seksjoner:
+Hero med tjenesteposisjon
+Problemer nettsiden skal løse
+Hva webutvikling med forretningsfokus innebærer
+Hvem dette passer for
+Hvem dette ikke passer for
+Struktur, innhold, synlighet og konvertering
+Kobling til strategi og prioritering
+Drift og forbedring som støtte, ikke egen hovedleveranse
+ROI-kalkulator som vurderingsverktøy
+FAQ
+CTA til digital vurdering
+CTA:
+ be om digital vurdering, bruke ROI-kalkulator, sende forespørsel.
+FAQ:
+ Hva bør en SMB tenke på før ny nettside?
+ Når bør en bedrift forbedre nettsiden i stedet for å bygge ny?
+ Hva er webutvikling med forretningsfokus?
+ Hvordan kan en nettside gi bedre henvendelser?
+ Hva bør en daglig leder kreve av en ny bedriftsnettside?
+6. Praktisk AI for SMB blueprint
+Vinkling: AI som praktisk modenhet, arbeidsflyt og prioritering, ikke hype.
+Seksjoner:
+Hero med nøktern AI-posisjon
+AI-usikkerhet hos SMB
+Hva praktisk AI kan bety i arbeidsflyt og beslutninger
+Hva som bør vurderes før investering
+Hvem dette passer for
+Hvem dette ikke passer for
+AI-modenhetstest som trygg start
+Kobling til web, strategi og digital prioritering
+Forbehold: ingen effektgaranti
+FAQ
+CTA til AI-modenhetstest eller digital vurdering
+CTA:
+ ta AI-modenhetstest, be om digital vurdering, kontakte virksomheten.
+FAQ:
+ Hvordan kan små bedrifter bruke AI praktisk?
+ Når er en SMB klar for AI?
+ Hva er en AI-modenhetstest?
+ Hva bør en bedrift gjøre før den investerer i AI?
+ Hvilke arbeidsprosesser kan AI forbedre?
+7. AI-modenhetstest blueprint
+Formål: gi SMB-ledere et strukturert startpunkt for å vurdere AI-modenhet, risiko, muligheter og neste steg.
+Flyt:
+Kort introduksjon og forbehold
+Spørsmål om mål, arbeidsflyt, datagrunnlag, kompetanse, risiko og prioritering
+Resultatnivå: lav / middels / høy modenhet, eller tilsvarende nøktern kategorisering
+Anbefalt neste steg
+CTA til digital vurdering / strategisamtale
+Output:
+ modenhetsnivå, mulige prioriteringsområder, risikopunkter, anbefalt samtalegrunnlag.
+Forbehold:
+ Skal ikke love AI-suksess, effektiviseringsprosent, ROI eller dokumentert effekt.
+8. ROI-kalkulator blueprint
+Formål: hjelpe eiere og daglige ledere å vurdere mulig verdi, prioritering og beslutningsgrunnlag før digital investering.
+Flyt:
+Forklaring av kalkulator som estimat / vurderingsgrunnlag
+Input: investeringstype, omtrentlig kostnad, mål, nåsituasjon, verdi av henvendelser / tidsbesparelse der relevant
+Resultat: scenario eller estimat, ikke fasit
+Prioriteringsråd: hva bør undersøkes videre
+CTA til digital vurdering
+Output:
+ indikativt vurderingsgrunnlag, mulige prioriteringer, spørsmål til videre avklaring.
+Forbehold:
+ Må ikke omtales som garanti, dokumentert ROI, sikker avkastning eller resultatløfte.
+9. Om Altibedrift / entity-trust blueprint
+Formål: rydde entity, tillit og kategori.
+Seksjoner:
+Hvem Altibedrift er
+HAUT FORVALTING AS som juridisk rotentity
+Altibedrift som merkevare og digital eiendom
+Hva Altibedrift hjelper SMB med
+Bergen som lokal tillitsforankring
+Vestland som regional kontekst
+Norge som digitalt leveranseområde
+Hva Altibedrift ikke er: generisk webbyrå, markedsføringsbyrå, AI-hype-selskap eller nasjonal lederaktør
+Trust-moduler som kan fylles når dokumentert
+Må brukes: org.nr. 931 603 760 dersom org.nr. brukes.
+ Må ikke brukes: org.nr. 926 873 954.
+10. Kontakt / digital vurdering blueprint
+Formål: gjøre neste steg konkret uten å over-love rådgivning.
+Brukeren bør sende inn:
+virksomhet og rolle
+hva de vurderer: nettside, AI, strategi, prioritering eller usikkert
+kort beskrivelse av nåsituasjon
+ønsket mål eller problem
+om de har tatt AI-modenhetstest eller brukt ROI-kalkulator
+ønsket kontaktmåte
+CTA-logikk:
+ Global CTA bør være digital vurdering / strategisamtale.
+ Verktøyflater bør sende videre til vurdering med resultat som samtalegrunnlag.
+ Tjenestesider bør tilby både forespørsel og vurdering.
+Forventningsstyring:
+ Samtalen skal beskrives som avklaring og prioritering, ikke som gratis full strategi eller garantert vekstplan.
+11. FAQ-struktur
+Web
+Hva bør en SMB tenke på før ny nettside?
+Når bør en bedrift forbedre nettsiden i stedet for å bygge ny?
+Hva er webutvikling med forretningsfokus?
+Hvordan kan en nettside gi bedre henvendelser?
+Hva bør en daglig leder kreve av en ny bedriftsnettside?
+AI
+Hvordan kan små bedrifter bruke AI praktisk?
+Når er en SMB klar for AI?
+Hva er en AI-modenhetstest?
+Hva bør en bedrift gjøre før den investerer i AI?
+Hvilke arbeidsprosesser kan AI forbedre?
+Strategi
+Hvordan prioriterer en SMB digitale tiltak?
+Når trenger en bedrift digital strategi?
+Hva er forskjellen på digital strategi og webutvikling?
+Hvordan kobles web, AI og strategi sammen?
+Beslutningsstøtte
+Hva er digital beslutningsstøtte for SMB?
+Hvordan vet en bedrift hvilke digitale investeringer som bør komme først?
+Hva bør ledelsen vite før de investerer i nettside eller AI?
+Verktøy
+Hva viser en AI-modenhetstest?
+Hvordan fungerer en ROI-kalkulator for digitale tiltak?
+Hva skjer etter at man har tatt en AI-test?
+Kan en kalkulator garantere digital ROI?
+Hvordan brukes verktøyene i en strategisamtale?
+Pris/ROI
+Hvordan vurderer man ROI på digitale tiltak?
+Hva kan en ROI-kalkulator brukes til?
+Hva påvirker verdien av ny nettside, AI eller digital forbedring?
+Geografi/tillit
+Hvorfor velge en digital partner med lokal forankring i Bergen?
+Kan Altibedrift levere digitalt til SMB-er i Norge?
+Hva betyr lokal forankring når tjenestene leveres digitalt?
+Hvordan brukes Vestland som regional kontekst?
+12. Internlenking
+Hovedflyt:
+Forside → Webutvikling med forretningsfokus
+Forside → Praktisk AI for SMB
+Forside → AI-modenhetstest
+Forside → ROI-kalkulator
+Forside → Om Altibedrift
+Webutvikling → ROI-kalkulator
+Webutvikling → Digital vurdering / kontakt
+Praktisk AI → AI-modenhetstest
+Praktisk AI → Digital vurdering / kontakt
+AI-modenhetstest → Praktisk AI for SMB
+AI-modenhetstest → Digital vurdering / kontakt
+ROI-kalkulator → Webutvikling
+ROI-kalkulator → Digital vurdering / kontakt
+Om Altibedrift → Kontakt
+Kontakt → relevante verktøy dersom bruker ikke er klar til samtale
+Skal ikke bygges som tjeneste × sted-lenking.
+13. Trust- og proof-moduler
+Kan brukes nå:
+HAUT FORVALTING AS som juridisk rotentity
+Altibedrift som merkevareentity
+altibedrift.no som digital eiendom
+org.nr. 931 603 760 dersom org.nr. brukes
+Bergen som lokal tillitsforankring
+Vestland som regional kontekst
+Norge som digitalt leveranseområde
+nøktern forklaring av arbeidsmåte: vurdere, prioritere, gjennomføre, forbedre
+Må vente:
+Google-rating
+antall anmeldelser
+kundecases
+kundereferanser
+erfaringstall
+konkrete resultater
+sterke ROI- eller effektpåstander
+fysisk adresse dersom 16 / 16A ikke er avklart
+Google Business Profile som proof før verifisering
+14. Publiseringssperrer
+Content Injection får ikke skrive som fakta:
+at Altibedrift er Norges ledende, best, markedsleder eller tilsvarende
+at Altibedrift er ledende i Bergen eller Vestland
+garanterte resultater, garantert ROI eller sikker vekst
+Google-rating eller anmeldelsestall uten verifisering
+cases eller referanser uten godkjenning
+erfaringstall uten dokumentasjon
+org.nr. 926 873 954
+fysisk adresse før adresseavvik er avklart
+at Altibedrift er webbyrå, markedsføringsbyrå eller AI-hype-selskap som hovedkategori
+at Bergen, Vestland eller Norge er egne dominansområder
+lokale landingssider eller tjeneste × sted-struktur
+15. Fase 2-innhold
+Kan bygges senere dersom proof, metode og dokumentasjon finnes:
+Digital handlingsplan som metodeflate
+Digital beslutningsstøtte som selvstendig authority-side
+Drift og forbedring som egen støtte-/tjenesteflate
+Google Bedriftsprofil / lokal synlighet som støtteflate
+Innhold og konvertering som støtteflate
+Smartere arbeidsflyt
+AI-workshop
+AI i arbeidsprosesser
+Guider om praktisk AI for SMB
+Guider om digital prioritering
+FAQ-hub
+Godkjente cases og referanser
+Bransje- eller behovssegmenter
+Sterkere regional kontekst for Vestland, kun med dokumentasjon
+16. Handoff til Content Injection Agent
+Neste agent skal skrive:
+rolig, profesjonell norsk tekst
+konkret SMB-rettet innhold
+problemnære seksjoner, ikke fluffy digital vekst-språk
+tydelig forklaring av web, AI og strategi som samlet modell
+nøkterne verktøytekster for AI-modenhetstest og ROI-kalkulator
+kontakttekst med tydelig forventningsstyring
+FAQ-svar som hjelper beslutning, ikke bare SEO
+Neste agent må unngå:
+ferdige proof-påstander uten dokumentasjon
+superlativer og lederpåstander
+AI-hype
+webbyrå-posisjonering
+markedsføringsbyrå-posisjonering
+lokale landingssider
+tjeneste × sted-logikk
+sterke effekt- og ROI-løfter
+17. Klarhetsstatus
+Klar til Content Injection: JA
+Krever SEO/AEO-revisjon: NEI
+18. Endelig status
+Altibedrift bør i fase 1 bygges med én hovedflate, to kjerne-tjenesteflater, to verktøyflater, én nøktern entity-/trust-flate og én kontakt-/vurderingsflyt. Dette er tilstrekkelig for å etablere praktisk digital vekst for SMB uten å gjøre prosjektet større, mer lokalt, mer byråpreget eller mer proof-tungt enn grunnlaget tåler.
+Klar til Content Injection Agent:
+ JA
+
