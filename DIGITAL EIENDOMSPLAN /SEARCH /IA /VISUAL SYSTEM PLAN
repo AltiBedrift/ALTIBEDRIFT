@@ -1,0 +1,244 @@
+VISUAL SYSTEM PLAN — Altibedrift / HAUT FORVALTING AS
+1. Kort visuell dom
+Altibedrift bør få et rolig, moderne og beslutningsorientert visuelt system som gjør digitale valg lettere å forstå for SMB-ledere.
+Uttrykket skal være mer praktisk rådgivningsflate enn byråside, mer beslutningsstøtte enn salgsside, og mer nøktern digital partner enn AI-/tech-startup.
+Visuelt hovedprinsipp:
+Altibedrift skal føles som en trygg digital vekstpartner som hjelper brukeren å velge riktig neste steg, ikke som en leverandør som prøver å imponere med store løfter.
+2. Overordnet visuell retning
+Designretningen bør være:
+moderne, men ikke futuristisk
+ryddig, men ikke steril
+teknologisk nok til å støtte web, AI og strategi
+menneskelig nok til å passe eiere, daglige ledere og SMB-ledere
+praktisk og lavterskel, uten å bli enkel eller billig
+premium på en nøktern måte, ikke luksuriøs eller flashy
+Visuelt bør siden bygges rundt beslutningsklarhet:
+Hva er problemet?
+Hvordan henger web, AI og strategi sammen?
+Hvilket startpunkt passer?
+Hva kan Altibedrift gjøre praktisk?
+Hva er neste steg?
+3. Førsteinntrykk / hero-retning
+Hero skal ikke ligne klassisk byråhero.
+Den bør visuelt formidle digital usikkerhet og prioritering, ikke “vi lager nettsider” eller “AI er fremtiden”.
+Hero bør ha:
+tydelig hovedbudskap i stort, rolig teksthierarki
+kort forklarende tekst under
+én tydelig primær CTA: Be om digital vurdering
+to sekundære veier: AI-modenhetstest og ROI-kalkulator
+et visuelt beslutningsmotiv som viser sammenheng mellom web, AI og strategi
+tillitsmarkør som kan vise HAUT FORVALTING AS / org.nr. 931 603 760 / Bergen på en nøktern måte
+Hero bør ikke bruke:
+stock-preget kontorbilde
+abstrakt “digital vekst”-grafikk uten mening
+mørk enterprise-tech
+neon-AI
+superlativer
+rating, cases eller tall før dokumentert
+4. Layoutfilosofi
+Siden skal være en smal beslutningsreise, ikke en bred tjenestekatalog.
+Layouten bør bruke:
+korte introfelt
+tydelige valgflater
+kompakte beslutningsmoduler
+ryddige prosesskort
+praktiske verktøykort
+forbeholdsbokser
+FAQ-accordion
+CTA-bånd mellom beslutningsfaser
+internlenkekort som peker videre uten å åpne for mange valg
+Seksjoner bør være tydelig adskilt, men ikke føles som mange isolerte kampanjeblokker. Brukeren skal oppleve én sammenhengende reise.
+5. Sideopplevelse per fase 1-flate
+Forside:
+Skal være hovedreisen. Den må først speile brukerens digitale usikkerhet, deretter forklare web + AI + strategi som samlet modell, og så gi tre tydelige veier videre: digital vurdering, AI-modenhetstest og ROI-kalkulator.
+Webutvikling:
+Skal føles som forretningsorientert beslutningsflate, ikke webbyråportfolio. Visuelt bør siden prioritere problemer nettsiden skal løse, struktur/innhold/synlighet/konvertering og kobling til ROI-kalkulator.
+Praktisk AI:
+Skal være nøktern, trygg og moden. Visuelt må AI fremstilles som arbeidsflyt, prioritering, risiko og modenhet, ikke som magi, hype eller automatiseringsshow.
+AI-modenhetstest:
+Skal se ut som et praktisk vurderingsverktøy. Det bør ha tydelige steg, lav terskel, progresjon og rolige resultatnivåer. Resultatet må fremstå som samtalegrunnlag, ikke diagnose.
+ROI-kalkulator:
+Skal se strukturert og økonomisk nøktern ut. Den bør bruke scenario-logikk, inputfelt, prioriteringssignaler og tydelige forbehold. Den må aldri visuelt antyde garantert avkastning.
+Om Altibedrift:
+Skal være trust-/entity-flaten. Den bør rydde forholdet mellom Altibedrift, HAUT FORVALTING AS, org.nr. 931 603 760, altibedrift.no, Bergen, Vestland og Norge. Den må være tydelig, men ikke tung juridisk.
+Kontakt:
+Skal føles som en avklaringsflate. Formen bør hjelpe brukeren å sende inn riktig informasjon uten at det virker som en lang konsulentsøknad. Verktøyene bør tilbys som alternativ hvis brukeren ikke er klar.
+6. Komponentsystem
+Anbefalte komponenttyper:
+beslutningskort for tre veier videre
+problemkort for digital usikkerhet
+modellkomponent for web + AI + strategi
+prosesskort for vurdere → prioritere → gjennomføre → forbedre
+passer for / passer ikke for-modul
+verktøykort for AI-test og ROI-kalkulator
+forbeholdsboks for test, ROI og proof
+trust/entity-modul med juridisk rotentity
+geo-kontekstmodul for Bergen / Vestland / Norge
+FAQ-accordion
+internlenkekort
+kontaktforberedelse-modul: “hva bør du sende inn?”
+CTA-bånd for digital vurdering
+Komponentene skal være funksjonelle og beslutningsstøttende, ikke dekorative.
+7. CTA-system
+Primær CTA:
+Be om digital vurdering.
+Den skal være tydelig, rolig og handlingsorientert. Ikke aggressiv, ikke salgsmasete.
+Sekundære CTA-er:
+Ta AI-modenhetstest
+Bruk ROI-kalkulator
+Les om praktisk AI
+Les om webutvikling
+Kontekstuelle CTA-er:
+Etter webseksjoner: Bruk ROI-kalkulator eller be om vurdering
+Etter AI-seksjoner: Ta AI-modenhetstest eller be om vurdering
+Etter verktøyresultat: Gå til digital vurdering
+På kontakt: Send forespørsel eller ta et verktøy først
+Sticky CTA kan brukes på mobil og desktop, men må være lavmælt. Den bør støtte beslutningsreisen, ikke presse brukeren.
+8. Verktøyvisuell logikk
+AI-modenhetstest:
+Bør fremstå som et strukturert refleksjonsverktøy med steg for mål, arbeidsflyt, data, kompetanse, risiko og prioritering. Resultatnivåer bør være rolige og forklarende: lav, middels og høy modenhet eller tilsvarende nøktern modell.
+Visuelt uttrykk:
+progresjon
+tydelige trinn
+enkle valg
+korte forklaringer
+tydelig forbehold
+anbefalt neste steg
+ROI-kalkulator:
+Bør fremstå som et scenarioverktøy, ikke en finansiell fasit.
+Visuelt uttrykk:
+strukturert input
+scenario- eller estimatfelt
+usikkerhetsmarkører
+prioriteringsråd
+tydelig “ikke garanti”-ramme
+CTA til digital vurdering
+Begge verktøy skal se nyttige, praktiske og seriøse ut. Ikke gamifiserte, ikke flashy, ikke AI-produktaktige.
+9. Trust- og proof-visuell logikk
+Kan vises nå:
+HAUT FORVALTING AS
+org.nr. 931 603 760
+Altibedrift som merkevare
+altibedrift.no som digital eiendom
+Bergen som lokal tillitsforankring
+Vestland som regional kontekst
+Norge som digitalt leveranseområde
+nøktern arbeidsmåte: vurdere, prioritere, gjennomføre, forbedre
+Må vente:
+Google-rating
+antall anmeldelser
+kundecases
+kundereferanser
+erfaringstall
+konkrete resultater
+ROI-påstander
+fysisk adresse før 16 / 16A er avklart
+sterke effektpåstander
+Trust-moduler bør føles som ryddig dokumentasjon, ikke som skryt.
+10. Farge- og kontrastretning
+Fargeuttrykket bør være lyst, rolig og profesjonelt med tydelig kontrast.
+Retningen bør være:
+lys hovedflate
+dempede nøytraler for ro og lesbarhet
+én tydelig handlingsfarge for CTA
+sekundære aksenter for web, AI og strategi
+forsiktig bruk av tekniske linjer eller grid-elementer
+høy lesbarhet i tekst, verktøy og FAQ
+Unngå:
+mørk enterprise-tech
+neon-AI
+lilla/blå futuristisk gradientdominans
+reklamebyrå-palett
+for mange sterke aksentfarger
+lav kontrast i trust- og forbeholdstekst
+11. Typografisk retning
+Typografien bør være moderne, klar og beslutningsvennlig.
+Retning:
+tydelig, rolig hovedoverskrift
+korte, skannbare mellomtitler
+god luft rundt teksttunge seksjoner
+kompakt, lesbar brødtekst
+sterkere hierarki i verktøy, prosess og valgkort
+nøkterne labels for trust, forbehold og resultater
+Typografien skal støtte SMB-ledere som skanner før de leser. Ikke rapportaktig, ikke reklamepreget, ikke startup-leken.
+12. Bilde-, ikon- og grafikkretning
+Bilder bør brukes forsiktig. Hvis bilder brukes, bør de være konkrete, troverdige og SMB-nære. Ikke generiske kontorbilder.
+Grafikkretningen bør heller bygge på:
+beslutningsmodeller
+enkle relasjonskart
+prosesslinjer
+praktiske verktøyflater
+diskrete data-/prioriteringsmotiver
+nøkterne ikoner for web, AI, strategi, vurdering, risiko og prioritering
+Ikoner bør være enkle og funksjonelle. Ikke maskoter, ikke lekne illustrasjoner, ikke futuristiske AI-symboler som tar over identiteten.
+13. Mobilopplevelse
+Mobil må forenkle beslutningsreisen kraftig.
+Prioritet på mobil:
+kort hero
+primær CTA tidlig
+tre valg videre tidlig
+web og AI som to enkle spor
+verktøy som tydelige innganger
+FAQ som accordion
+trust-info komprimert, men tilgjengelig
+kontakt lett tilgjengelig hele veien
+Mobil bør unngå lange metodeforklaringer før brukeren får velge retning.
+Sticky CTA på mobil kan brukes, men bør være diskret og kontekstavhengig.
+14. Hva skal unngås visuelt
+Unngå visuelt:
+generisk webbyrå-look
+markedsføringsbyrå-estetikk
+AI-hype, neon, sci-fi eller “revolusjonerende teknologi”
+tung konsulentrapportfølelse
+mørk enterprise-SaaS
+lokal dominansdesign
+“Norges ledende”-autoritetssignaler
+overdrevent dashboardpreg
+for mange moduler på én gang
+proof-plassholdere som ser ut som manglende innhold
+Google-rating, cases eller erfaringstall før dokumentert
+fysisk adresse før avklart
+org.nr. 926 873 954
+ROI-grafikk som antyder garantert gevinst
+15. Handoff til SVG / Motion / Effects Agent
+Neste agent skal lage visuelle virkemidler som støtter beslutningsklarhet, ikke imponering.
+Ta videre:
+visuell modell for web + AI + strategi
+rolig beslutningsgrafikk for “uklare digitale valg”
+prosessvisualisering for vurdere → prioritere → gjennomføre → forbedre
+diskrete verktøyikoner for AI-modenhetstest og ROI-kalkulator
+nøkterne nivåindikatorer for AI-modenhet
+scenario-/prioriteringsvisualisering for ROI-kalkulator
+trust/entity-visuell for HAUT FORVALTING AS, Altibedrift og org.nr. 931 603 760
+diskret geo-kontekst for Bergen / Vestland / Norge
+små, rolige mikroeffekter som støtter progresjon, valg og forståelse
+Bevegelse skal være lav til moderat. Den skal gi orientering, ikke underholdning.
+Ikke lag:
+futuristisk AI-animasjon
+flashy dashboard-effekter
+tung parallax
+glødende tech-bakgrunner
+proof-grafikk med udokumenterte tall
+aggressiv salgs-motion
+16. Handoff til Technical Architect senere
+Strukturelle visuelle behov uten teknologivalg:
+støtte for syv fase 1-flater
+modulært seksjonssystem
+global CTA og kontekstuelle CTA-er
+verktøyflater med steg, input, resultat og forbehold
+kontaktflyt som kan ta med kontekst fra verktøy
+FAQ per relevant flate
+trust-/entity-modul med korrekt org.nr.
+internlenkekort mellom tjenester, verktøy og kontakt
+mobilvennlig sticky CTA
+plass til publiseringssperrer/forbehold uten at siden føles defensiv
+ingen behov for kundeportal, innlogging eller avansert webapp i fase 1
+17. Klarhetsstatus
+Klar til SVG / Motion / Effects Agent: JA
+Krever Content-revisjon: NEI
+Krever IA-revisjon: NEI
+Forbehold: Proof, rating, fysisk adresse, cases, erfaringstall og sterke effektpåstander må fortsatt holdes ute til dokumentasjon foreligger.
+18. Endelig status
+Altibedrift er visuelt klart for neste fase som en rolig, moderne og praktisk beslutningsreise for SMB-ledere.
+Den visuelle retningen skal gjøre web, AI og strategi forståelig som ett samlet beslutningssystem, med digital vurdering, AI-modenhetstest og ROI-kalkulator som trygge startpunkter.
+Klar til SVG / Motion / Effekt-agent: JA
