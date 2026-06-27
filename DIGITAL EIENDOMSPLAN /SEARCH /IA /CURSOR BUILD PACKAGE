@@ -1,0 +1,553 @@
+CURSOR BUILD PACKAGE — Altibedrift / HAUT FORVALTING AS
+1. Kort byggedom
+Prosjektet er klart til kontrollert bygging i fase 1.
+Cursor/Replit/Google AI Studio skal bygge en lett, SEO-sterk digital eiendom for Altibedrift på altibedrift.no, med HAUT FORVALTING AS som juridisk rotentity og Altibedrift som merkevare. Nettstedet skal presentere Altibedrift som praktisk digital vekstpartner for SMB gjennom web, AI og strategi.
+Byggepakken skal løse praktisk implementering av godkjent arkitektur, innhold, route-struktur, verktøylogikk, proof-sperrer, schema, tilgjengelighet, performance og deploy-forberedelse.
+Det skal ikke bygges kundeportal, database, AI API, WordPress, CMS, innlogging eller full webapp i fase 1.
+2. Valgt build-modell
+Valgt modell: 6-fase build.
+Dette er en standard profesjonell nettside med to interaktive front-end-verktøy. Den er mer kompleks enn en enkel 3-fase side, men trenger ikke 9-fase modell fordi fase 1 ikke har backend, database, innlogging, portal eller tung integrasjonslogikk.
+3. Begrunnelse for build-modell
+6 faser gir riktig kontrollnivå:
+Fundament først.
+Global struktur før sider.
+Content-rendering før interaktive verktøy.
+Verktøy bygges separat.
+Proof, schema, skjema og accessibility kvalitetssikres før launch-prep.
+QA/deploy-forberedelse holdes separat fra implementering.
+Ingen fase skal be Cursor endre fundament, systemlogikk og presentasjon samtidig uten tydelig avgrensning.
+4. 3-lags teknisk komposisjon
+Fundament
+Astro + TypeScript. Statisk HTML først, lav JavaScript-belastning, Astro islands kun for interaktive komponenter. Ingen backend, database, CMS, WordPress eller AI API i fase 1.
+Systemlogikk
+Strukturerte datafiler for sider, navigation, CTA-er, FAQ, tjenester, tools, schema, proof flags, entity-data, disclaimers og skjema. AI-modenhetstest og ROI-kalkulator bygges regelbasert/scenario-basert i front-end.
+Presentasjon
+Semantiske Astro-komponenter, rolige seksjoner, beslutningsmoduler, verktøykort, FAQ-accordion, CTA-bånd, trust/entity-moduler, nøktern motion, CSS tokens og lett SVG/ikonbruk.
+5. Faseplan
+Fase 1 — Prosjektfundament
+Mål: Etablere Astro/TypeScript-prosjekt, mapper, globale styles, layouts og tomme ruter.
+Input: Technical Architecture Plan, godkjent sidekart, Visual System Plan.
+Påvirkes: src/layouts, src/pages, src/styles, src/assets, src/utils.
+Cursor skal gjøre:
+Opprette Astro + TypeScript-prosjekt.
+Lage grunnstruktur.
+Lage BaseLayout.astro.
+Lage globale CSS tokens.
+Lage tomme sider for alle syv godkjente ruter.
+Sette opp grunnleggende build/dev scripts.
+Cursor skal ikke gjøre:
+Ikke fylle inn alt innhold.
+Ikke bygge verktøy.
+Ikke lage database, backend, CMS eller AI API.
+Ikke endre sidekart.
+Stoppunkt: Alle ruter eksisterer og bygger uten innholdstunge komponenter.
+QA-sjekk: npm install, npm run dev, npm run build.
+
+Fase 2 — Global components og datafiler
+Mål: Lage globale komponenter og sentrale datafiler.
+Input: IA/Digital Experience Map, Content Payload, Search/AEO Map.
+Påvirkes: src/components/global, src/components/seo, src/content, src/data.
+Cursor skal gjøre:
+Lage Header, MobileNav, Footer, SEOHead, Breadcrumbs.
+Lage datafiler for navigation, footer, CTA, entity/trust, proof flags, pages, FAQ og schema.
+Lage reusable DisclaimerBox og ProofFlagNotice.
+Cursor skal ikke gjøre:
+Ikke legge inn udokumenterte proof-påstander.
+Ikke bruke fysisk adresse.
+Ikke bruke org.nr. 926 873 954.
+Ikke bruke LocalBusiness-schema.
+Stoppunkt: Global navigasjon, footer og metadata kan rendres fra data.
+QA-sjekk: Sjekk header/footer på alle ruter, korrekt org.nr. og ingen blocked claims.
+
+Fase 3 — Sider og content-rendering
+Mål: Bygge alle syv sider fra godkjent content payload.
+Input: Content Payload, Visual System Plan.
+Påvirkes: src/pages, src/components/sections, src/data/pages.
+Cursor skal gjøre:
+Bygge forside, webutvikling, praktisk AI, verktøysider, om-side og kontakt-side.
+Bruke seksjonskomponenter for hero, trust, modell, passer for/passer ikke for, FAQ, internal links og CTA.
+Rendre FAQ kun der FAQ faktisk vises.
+Cursor skal ikke gjøre:
+Ikke omskrive posisjonering.
+Ikke finne opp nye sider.
+Ikke lage case-seksjon.
+Ikke legge til rating, erfaringstall eller effektpåstander.
+Stoppunkt: Alle sider er lesbare, semantiske og følger route map.
+QA-sjekk: Hver side har én H1, korrekt route, korrekt CTA og nøkternt innhold.
+
+Fase 4 — AI-modenhetstest og ROI-kalkulator
+Mål: Bygge interaktive verktøy som Astro islands med minimal JS.
+Input: Technical Architecture Plan, Content Payload, SVG/Motion Package.
+Påvirkes: src/components/tools, src/data/tools, src/utils.
+Cursor skal gjøre:
+Lage regelbasert AIReadinessTool.
+Lage scenario-basert ROICalculator.
+Lage resultater, disclaimers, ARIA live-regioner og CTA til kontakt.
+Sørge for at verktøydata kan sendes som skjult kontekst til kontakt dersom bruker aktivt går videre.
+Cursor skal ikke gjøre:
+Ikke bruke AI API.
+Ikke lagre resultater i database.
+Ikke fremstille test som diagnose.
+Ikke fremstille ROI som garanti.
+Stoppunkt: Begge verktøy fungerer uten backend.
+QA-sjekk: Tastaturbruk, resultater, disclaimers, reduced motion og ingen guarantee-copy.
+
+Fase 5 — Kontaktform, proof flags, schema og accessibility
+Mål: Gjøre siden klar for trygg innsending, publiseringssperrer og strukturerte data.
+Input: Technical Architecture Plan, Search/AEO Map, Security/privacy-notater.
+Påvirkes: src/components/forms, src/components/schema, src/data/proofFlags, src/utils.
+Cursor skal gjøre:
+Lage kontaktform med labels, validering, samtykke og skjult verktøykontekst.
+Implementere honeypot og tidsvalidering.
+Klargjøre form provider-integrasjon uten å låse leverandør hardt.
+Lage schema-moduler for Organization, WebSite, WebPage, Service, FAQPage, BreadcrumbList og WebApplication/SoftwareApplication.
+Lage proof flag-system som markerer eller blokkerer ikke-godkjente claims.
+Cursor skal ikke gjøre:
+Ikke bruke LocalBusiness før adresse og Google Business er avklart.
+Ikke aktivere Turnstile med mindre nødvendig.
+Ikke samle mer persondata enn nødvendig.
+Ikke legge inn tredjepartsscripts uten behov.
+Stoppunkt: Skjema, schema og proof flags fungerer isolert.
+QA-sjekk: Schema-validering, form-validering, proof-sperrer og accessibility baseline.
+
+Fase 6 — QA-klargjøring, performance og deploy-prep
+Mål: Klargjøre prosjektet for Agent 13 QA / Launch Audit.
+Input: Alle tidligere rapporter og build-resultat.
+Påvirkes: Hele prosjektet, men kun justeringer for kvalitet.
+Cursor skal gjøre:
+Kjøre build og preview.
+Sjekke responsive visning.
+Sjekke Core Web Vitals-hensyn.
+Sjekke sitemap, robots og canonical.
+Sjekke reduced motion.
+Lage kort handoff-notat til QA.
+Cursor skal ikke gjøre:
+Ikke lansere production uten QA.
+Ikke endre strategi, innhold, stack eller designretning.
+Ikke fjerne proof-sperrer for å “rydde” siden.
+Stoppunkt: Prosjektet kan overleveres til QA / Launch Audit.
+QA-sjekk: Alle launch-kritiske sjekkpunkter er klare for Agent 13.
+6. Anbefalt prosjektoppsett
+Astro + TypeScript med statisk output som hovedmodell og interaktive øyer for AIReadinessTool, ROICalculator, FAQ og eventuelt mobilmeny.
+Anbefalt prinsipp:
+Innhold og data i strukturerte filer.
+Layout og SEO sentralt.
+Seksjoner modulært.
+Verktøy isolert fra sideinnhold.
+Proof flags sentralt, ikke hardkodet i komponenter.
+Schema genereres fra godkjente data.
+CSS tokens og utility-klasser før komponentspesifikk styling.
+7. Konkret fil- og mappestruktur
+src/
+ assets/
+   images/
+   svg/
+   icons/
+ components/
+   global/
+     Header.astro
+     MobileNav.astro
+     Footer.astro
+     Breadcrumbs.astro
+   seo/
+     SEOHead.astro
+     JsonLd.astro
+     SchemaBlock.astro
+   sections/
+     Hero.astro
+     TrustBar.astro
+     WebAiStrategyModel.astro
+     DecisionModule.astro
+     ValueCards.astro
+     ProcessSteps.astro
+     FitModule.astro
+     CTASection.astro
+     FAQAccordion.astro
+     InternalLinks.astro
+     DisclaimerBox.astro
+     ProofFlagNotice.astro
+   tools/
+     AIReadinessTool.tsx
+     ROICalculator.tsx
+     ToolResultCard.tsx
+     ProgressSteps.tsx
+   forms/
+     ContactForm.tsx
+     FormField.tsx
+     ConsentField.tsx
+ content/
+   pages/
+   faq/
+ data/
+   navigation.ts
+   footer.ts
+   entity.ts
+   ctas.ts
+   services.ts
+   tools.ts
+   proofFlags.ts
+   schema.ts
+   disclaimers.ts
+   internalLinks.ts
+   formFields.ts
+ layouts/
+   BaseLayout.astro
+   PageLayout.astro
+   ToolLayout.astro
+ pages/
+   index.astro
+   webutvikling.astro
+   praktisk-ai.astro
+   ai-modenhetstest.astro
+   roi-kalkulator.astro
+   om-altibedrift.astro
+   kontakt.astro
+ styles/
+   tokens.css
+   global.css
+   components.css
+   motion.css
+ utils/
+   proof.ts
+   schema.ts
+   scoring.ts
+   roi.ts
+   formContext.ts
+   validation.ts
+public/
+ robots.txt
+ favicon.svg
+8. Route map
+Route
+Side
+Bruker data fra
+/
+Forside / praktisk digital vekst
+pages.home, ctas, entity, faq.home, internalLinks.home
+/webutvikling
+Webutvikling med forretningsfokus
+pages.webutvikling, services.web, faq.web, ctas.web
+/praktisk-ai
+Praktisk AI for SMB
+pages.praktiskAi, services.ai, faq.ai, ctas.ai
+/ai-modenhetstest
+AI-modenhetstest
+pages.aiReadiness, tools.aiReadiness, disclaimers.ai, schema.tools
+/roi-kalkulator
+ROI-kalkulator
+pages.roiCalculator, tools.roi, disclaimers.roi, schema.tools
+/om-altibedrift
+Om Altibedrift
+pages.about, entity, proofFlags, faq.about
+/kontakt
+Kontakt / digital vurdering
+pages.contact, formFields, ctas.contact, disclaimers.contact
+
+Merk: Content Payload inneholder enkelte lengre slugs, men godkjent fase 1-sidekart i oppdraget låser rutene til /webutvikling og /praktisk-ai.
+9. Content/data-struktur
+Pages: H1, hero, intro, seksjoner, CTA-er, FAQ-referanser, internal links og metadata per route.
+FAQ: Én global FAQ-bank med sidebaserte utvalg. FAQPage-schema skal bare brukes når FAQ vises på siden.
+CTA-er: Global primær CTA Be om digital vurdering, sekundære CTA-er Ta AI-modenhetstest og Bruk ROI-kalkulator, samt kontekstuelle CTA-er per side.
+Navigation: Kort hovedmeny: Start, Webutvikling, Praktisk AI, Verktøy, Om Altibedrift, Kontakt.
+Trust/entity-data: HAUT FORVALTING AS, org.nr. 931 603 760, Altibedrift, altibedrift.no, Bergen, Vestland, Norge.
+Proof flags: Sentral liste over tillatte, ventende og blokkerte påstander.
+Schema: Sentral schema-data som genererer JSON-LD uten å legge inn ikke-godkjente fakta.
+Tool data: Spørsmål, svaralternativer, score, nivåer, resultatkort, CTA og disclaimers.
+10. Komponentplan
+Bygg komponentene i denne rekkefølgen:
+SEOHead, JsonLd, BaseLayout
+Header, MobileNav, Footer, Breadcrumbs
+Hero, CTASection, TrustBar
+WebAiStrategyModel, DecisionModule, ValueCards
+ProcessSteps, FitModule, InternalLinks
+FAQAccordion, DisclaimerBox, ProofFlagNotice
+AIReadinessTool, ToolResultCard, ProgressSteps
+ROICalculator
+ContactForm, FormField, ConsentField
+11. Side-/routeplan
+Forside /
+Skal forklare praktisk digital vekst for SMB gjennom web, AI og strategi. Første skjerm skal gi tydelig problem, posisjon, CTA og verktøyvalg.
+Webutvikling /webutvikling
+Skal presentere webutvikling med forretningsfokus, ikke generisk webbyrå. Kobles til ROI-kalkulator og digital vurdering.
+Praktisk AI /praktisk-ai
+Skal presentere praktisk AI for SMB uten hype. Kobles til AI-modenhetstest og digital vurdering.
+AI-modenhetstest /ai-modenhetstest
+Skal være egen verktøyflate med regelbasert test, forbehold og CTA.
+ROI-kalkulator /roi-kalkulator
+Skal være egen verktøyflate med scenarioestimat, usikkerhet og tydelig “ikke garanti”.
+Om Altibedrift /om-altibedrift
+Skal rydde entity: HAUT FORVALTING AS, Altibedrift, org.nr. 931 603 760, Bergen, Vestland, Norge. Ingen fysisk adresse før avklaring.
+Kontakt /kontakt
+Skal være avklaringsflate for digital vurdering med skjema og samtykke.
+12. AI-modenhetstest — byggeinstruks
+Testen skal være regelbasert og front-end-basert.
+Spørsmålskategorier:
+Mål og behov
+Arbeidsflyt
+Data og informasjon
+Kompetanse og kapasitet
+Risiko og kontroll
+Prioritering og neste steg
+Svaralternativer:
+Hvert spørsmål bør ha 3-4 nøkterne svaralternativer, for eksempel lav/uklar, delvis avklart, ganske avklart, godt forankret.
+Poeng:
+Svar gir enkel score, for eksempel 0, 1, 2, 3. Total score mappes til nivå.
+Nivåer:
+Lav modenhet: Start med kartlegging, enkle bruksområder og risikovurdering.
+Middels modenhet: Prioriter praktisk bruk og test kontrollert.
+Høyere modenhet: Vurder systematisering, men fortsatt med kontroll og forankring.
+Resultatkort:
+Skal vise nivå, kort forklaring, mulige neste steg, usikkerheter og CTA.
+CTA:
+Primær etter resultat: Be om digital vurdering.
+Disclaimer:
+Resultatet er en indikasjon og samtalegrunnlag, ikke diagnose, garanti eller anbefaling om investering.
+Accessibility:
+Verktøyet må støtte tastatur, labels/fieldset, tydelig valgt state, progresjon som tekst, ARIA live-region for resultat og resultatkort som kan forstås uten farge.
+13. ROI-kalkulator — byggeinstruks
+Kalkulatoren skal være scenario-basert, ikke finansielt fasitverktøy.
+Inputfelter:
+Investeringstype: nettside, AI, digital forbedring, kombinasjon
+Omtrentlig investering/kostnad
+Nåværende månedlig verdi eller relevant økonomisk ramme
+Trafikk/leads/kunder hvis relevant
+Estimert tidsbruk eller mulig tidsbesparelse
+Antatt forbedringsrom
+Usikkerhetsnivå
+Kommentar/nåsituasjon valgfritt
+Beregningslogikk på høyt nivå:
+Bruk enkle scenarioer basert på brukerens egne tall.
+Vis lavt, moderat og høyt scenario hvis relevant.
+Bruk forbedringsrom som antagelse, ikke fakta.
+Beregn mulig verdi og sammenlign med investering som indikativt forhold.
+Marker usikkerhet tydelig.
+Resultatvisning:
+Skal vise scenario, antagelser, usikkerhet, hva som bør avklares og CTA.
+Forbehold:
+Må vise teksten: “Dette er et forenklet estimat basert på oppgitte tall. Det er ikke en garanti for resultat.”
+Skal ikke loves:
+Ingen garantert ROI, ingen sikker gevinst, ingen dokumentert effekt, ingen “flere kunder”-løfter.
+14. Kontakt / digital vurdering
+Kontaktformen skal inneholde:
+Navn
+Bedrift
+E-post
+Telefon valgfritt
+Nettside
+Hva gjelder henvendelsen
+Ønsket hjelp: web / AI / strategi / usikker
+Melding
+Samtykke/personvern
+Skjult kontekst fra AI-modenhetstest eller ROI-kalkulator hvis brukeren aktivt går videre fra verktøy
+Spamvern-prinsipper:
+Honeypot-felt
+Tidsvalidering før innsending
+Enkel rate limiting via form provider hvis valgt
+Turnstile kun hvis nødvendig
+Server-side validering kun hvis backend/form provider gjør dette tilgjengelig
+Ikke lagre sensitive verktøydata unødvendig
+15. SEO/AEO-implementeringsplan
+Implementer:
+Title og meta description per side
+Canonical per route
+Open Graph
+sitemap.xml
+robots.txt
+BreadcrumbList
+Organization
+WebSite
+WebPage
+Service
+FAQPage der FAQ faktisk vises
+WebApplication eller SoftwareApplication for AI-modenhetstest og ROI-kalkulator
+Skal ikke implementeres i fase 1:
+LocalBusiness før adresse og Google Business er avklart
+Google-rating schema
+Review schema
+Case/result schema uten godkjent dokumentasjon
+Entity-regler:
+Bruk kun HAUT FORVALTING AS.
+Bruk kun org.nr. 931 603 760.
+Ikke bruk org.nr. 926 873 954.
+16. Proof flag-system
+Lag proofFlags.ts med status per påstandstype.
+Må kunne stoppe eller markere:
+Google-rating
+Anmeldelser
+Erfaringstall
+Cases
+Adresse
+Resultater
+ROI-påstander
+Kundeprosjekter
+Sertifiseringer
+Autoritetspåstander
+Anbefalt statusmodell:
+approved: kan publiseres
+pending: kan ikke publiseres, kan markeres internt
+blocked: skal stoppe build eller vise tydelig utviklerfeil
+not_applicable: ikke i bruk i fase 1
+Fase 1-godkjent proof:
+HAUT FORVALTING AS
+Org.nr. 931 603 760
+Altibedrift
+altibedrift.no
+Bergen som lokal forankring
+Vestland som regional kontekst
+Norge som digitalt leveranseområde
+Nøktern arbeidsmåte: vurdere, prioritere, gjennomføre, forbedre
+17. SVG/motion-implementeringsplan
+Bruk Visual System Plan og SVG/Motion Package teknisk slik:
+CSS tokens for farge, typografi, spacing, radius, shadow og motion.
+Lett CSS motion for hover, focus, step transitions og accordion.
+prefers-reduced-motion skal redusere eller fjerne scroll-/overgangseffekter.
+Inline SVG eller lette ikonkomponenter.
+Ingen tunge animasjonsbibliotek i fase 1.
+Ingen flashy AI-effekter.
+Ingen neon, sci-fi, dashboard-overdrivelse, konfetti eller garantert vekstgrafikk.
+SVG skal forklare prosess, valg, relasjon eller tillit.
+Verktøyresultater skal se veiledende ut, ikke absolutte.
+18. Accessibility-plan
+Må implementeres som baseline:
+Én H1 per side.
+Logisk headingstruktur.
+Labels på alle skjemafelter.
+Fieldsets der valggrupper brukes.
+Tastaturnavigasjon i meny, FAQ, skjema og verktøy.
+Synlige focus states.
+God kontrast.
+Reduced motion.
+ARIA live-region for verktøyresultater.
+Resultatkort som kan leses uten farge alene.
+Feilmeldinger som kobles til relevante felt.
+CTA-er som riktige lenker eller knapper etter funksjon.
+19. Performance-plan
+Må følge:
+Statisk HTML først.
+Minimal JS.
+Hydrer bare AIReadinessTool, ROICalculator, mobilmeny og eventuelt FAQ hvis nødvendig.
+Optimaliserte bilder.
+Lazy loading på ikke-kritiske bilder.
+Kontrollert fontbruk, helst systemfont eller svært begrenset fontlasting.
+Ingen unødvendige tredjepartsscripts.
+Ingen tung analytics før samtykke/QA.
+Core Web Vitals-hensyn: lav CLS, rask LCP, lav JS-kostnad.
+Ingen effekter som skaper layout shift.
+20. Hosting/deploy-vurdering
+Cloudflare Pages: God ytelse og statisk hosting. Bra valg, men form-/previewflyt må vurderes.
+Netlify: Sterk kandidat for Astro, preview, skjema, miljøvariabler og enkel rollback.
+Vercel: Også sterk kandidat for Astro, preview og utviklerflyt. Litt mer app-orientert, men fullt brukbart.
+Hostinger: Kan brukes for enkel statisk hosting, men gir svakere preview-, rollback- og utviklerflyt enn Netlify/Vercel.
+Anbefaling: Netlify eller Vercel for fase 1, med Netlify som praktisk førstevalg dersom skjema og enkel statisk drift ønskes samlet. Endelig hosting bør ikke låses før Agent 13/14 har kontrollert praktiske launch-, sikkerhets- og eierskapsbehov.
+21. Cursor promptsekvens
+START HER — første byggeordre
+Bygg kun prosjektfundamentet for Altibedrift fase 1. Bruk Astro + TypeScript. Opprett mappestruktur, globale CSS tokens, layouts og tomme ruter for /, /webutvikling, /praktisk-ai, /ai-modenhetstest, /roi-kalkulator, /om-altibedrift og /kontakt. Ikke fyll inn alt innhold, ikke bygg verktøy, ikke legg til backend, CMS, database eller AI API. Stopp når prosjektet bygger og alle ruter finnes.
+Prompt fase 2
+Lag globale komponenter og datafiler: Header, MobileNav, Footer, SEOHead, Breadcrumbs, entity-data, navigation, CTA-er, footer-data, proof flags, disclaimers og schema-grunnlag. Bruk kun HAUT FORVALTING AS og org.nr. 931 603 760. Ikke bruk adresse, Google-rating, cases eller LocalBusiness.
+Prompt fase 3
+Bygg de syv sidene fra godkjent content payload med modulære seksjonskomponenter. Følg godkjente ruter. Ikke omskriv posisjonering, ikke legg til nye sider, cases, ratinger, erfaringstall eller sterke effektpåstander.
+Prompt fase 4
+Bygg AI-modenhetstest og ROI-kalkulator som isolerte front-end-verktøy. AI-testen skal være regelbasert. ROI-kalkulatoren skal være scenario-basert. Begge skal ha forbehold, CTA, ARIA live-region og tastaturstøtte. Ikke bruk AI API, database eller garanti-copy.
+Prompt fase 5
+Bygg kontaktform, proof flag-validering og JSON-LD schema. Kontaktformen skal ha labels, samtykke, honeypot, tidsvalidering og støtte for skjult verktøykontekst. Implementer Organization, WebSite, WebPage, Service, FAQPage, BreadcrumbList og WebApplication/SoftwareApplication. Ikke bruk LocalBusiness.
+Prompt fase 6
+Klargjør for QA: kjør build, preview, responsive sjekk, metadata, schema, accessibility, reduced motion, proof flags og performance. Ikke deploy production. Lag kort QA-handoff med funn og gjenstående kontroller.
+22. Regler til Cursor
+Cursor skal aldri:
+Endre strategi, posisjonering, SEO/AEO eller designretning.
+Endre teknologistack.
+Endre sidekart.
+Bruke org.nr. 926 873 954.
+Bruke Google-rating uten verifisering.
+Bruke erfaringstall uten dokumentasjon.
+Bruke cases uten godkjenning.
+Bruke fysisk adresse før 16 / 16A er avklart.
+Skrive “Norges ledende”, “AI-ekspert”, “garantert ROI” eller sterke effektpåstander.
+Gjøre Altibedrift til generisk webbyrå, markedsføringsbyrå eller AI-hype-selskap.
+Bygge backend, database, CMS, kundeportal, innlogging eller AI API i fase 1.
+Legge inn tunge animasjonsbibliotek.
+Bruke LocalBusiness schema før adresse/Google Business er avklart.
+Publisere blocked proof claims.
+23. Test- og kontrollplan
+Kjør:
+npm install
+npm run dev
+npm run build
+npm run preview
+Kontroller:
+Alle ruter finnes og svarer riktig.
+Hver side har én H1.
+Metadata, canonical og Open Graph er korrekt.
+JSON-LD validerer.
+FAQPage brukes kun der FAQ vises.
+Organization bruker HAUT FORVALTING AS og org.nr. 931 603 760.
+LocalBusiness er ikke brukt.
+Skjema har labels, validering, samtykke, honeypot og tidsvalidering.
+AI-test fungerer med tastatur og viser disclaimer.
+ROI-kalkulator viser scenario og “ikke garanti”.
+Mobile layout fungerer.
+Reduced motion fungerer.
+Proof flags stopper eller markerer blocked claims.
+Ingen uverifiserte ratings, cases, erfaringstall, adresse eller ROI-løfter finnes.
+24. QA-checkpoints
+Etter fase 1: Build fungerer og alle ruter finnes.
+Etter fase 2: Global navigasjon, footer, SEOHead og datafiler er på plass.
+Etter fase 3: Alle sider følger content payload og godkjente ruter.
+Etter fase 4: Verktøyene fungerer uten backend og uten garanti-/diagnosepreg.
+Etter fase 5: Schema, form, accessibility og proof flags fungerer.
+Etter fase 6: Prosjektet er klart for Agent 13 QA / Launch Audit, men ikke lansert.
+25. Risikoanalyse
+Største risikoer:
+Cursor bygger for mye på én gang og blander fundament, systemlogikk og presentasjon.
+Content slug-avvik fører til feil ruter.
+Verktøyene fremstilles som diagnose eller ROI-garanti.
+Proof placeholders blir publisert som ekte proof.
+LocalBusiness brukes før adresse er avklart.
+AI-visuell retning blir for flashy eller hype-preget.
+Nettsiden glir mot generisk webbyrå eller markedsføringsbyrå.
+For mye JavaScript gjør Astro-siden unødvendig tung.
+Skjema samler mer data enn nødvendig.
+Schema inneholder claims som ikke finnes synlig på siden.
+26. Leveranse til QA / Agent 13 Launch Audit
+Agent 13 må kontrollere:
+Korrekt entity-bruk.
+Ingen feil org.nr.
+Ingen uverifisert rating, anmeldelser, adresse, cases eller erfaringstall.
+Ingen ROI-garanti eller sterke effektpåstander.
+Alle routes, canonical, sitemap og robots.
+Schema-validering.
+Accessibility, keyboard navigation og ARIA live.
+Mobile layout og Core Web Vitals.
+Kontaktform, spamvern og samtykke.
+Reduced motion.
+Proof flag-system før deploy.
+27. Handoff til Agent 14 IP / Security / Ownership
+Agent 14 må kontrollere:
+Eierskap til kode, innhold, SVG, ikoner og visuelle assets.
+Tredjepartsavhengigheter og lisenser.
+Form provider, databehandling og personvernflyt.
+Analytics/cookie-samtykke.
+CSP og sikkerhetsheaders.
+Miljøvariabler og hemmeligheter.
+Dataminimering for verktøyresultater.
+Juridisk entity-bruk.
+At konfidensiell arkitekturmerking og eierskap er ivaretatt.
+28. Leveranseformat
+Prosjektet leveres videre som:
+Astro + TypeScript repo.
+Strukturert data/content-lag.
+Modulære komponenter.
+To front-end-verktøy.
+Kontaktform med spamvern-prinsipper.
+Schema-moduler.
+Proof flag-system.
+QA-handoff-notat.
+Ingen production deploy før Agent 13 og Agent 14 har kontrollert.
+29. Klar til QA / Launch Audit
+Klar til QA / Launch Audit:
+ JA
+STATUS:
+ CURSOR BUILD PACKAGE KLAR TIL BYGGING
+© Haut Forvalting AS (Org.nr. 931 603 760) — Altibedrift.
+ Konfidensiell arkitektur/arbeidsdokument. Uautorisert kopiering/distribusjon forbudt.
+
