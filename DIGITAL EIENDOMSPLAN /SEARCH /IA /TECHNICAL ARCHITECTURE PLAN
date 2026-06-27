@@ -1,0 +1,256 @@
+TECHNICAL ARCHITECTURE PLAN — Altibedrift / HAUT FORVALTING AS
+1. Kort teknisk dom
+Bygg som hybrid statisk nettsted med interaktive front-end-verktøy.
+Ikke full webapp. Ikke WordPress. Ikke tung CMS. Fase 1 trenger en rask, SEO-sterk digital eiendom med regelbaserte verktøy, tydelig schema, høy kontroll og lav teknisk gjeld.
+2. Anbefalt teknisk retning
+Anbefalt site type:
+ Hybrid statisk + interaktiv front-end.
+Anbefalt stack:
+ Astro + TypeScript + lett komponentstruktur.
+Alternativ:
+ Next.js kan brukes, men er mer enn nødvendig i fase 1.
+Ikke anbefalt:
+ WordPress, no-code, tung backend, kundeportal eller full SaaS-app.
+3. Hvorfor denne stacken passer prosjektet
+Astro passer fordi prosjektet trenger:
+sterk SEO/AEO med statisk HTML
+lav JavaScript-belastning
+interaktive øyer for AI-test og ROI-kalkulator
+enkel content model
+rask deploy
+god schema-kontroll
+lav teknisk gjeld
+høy mobilkvalitet
+mulighet for senere skalering uten å bygge for tungt nå
+4. Anbefalt arkitekturmodell
+Content layer
+ Strukturerte datafiler for sider, tjenester, FAQ, CTA, trust/entity, verktøyspørsmål, schema og proof flags.
+Presentation layer
+ Semantiske sidekomponenter, seksjoner, kort, CTA-blokker og trust-moduler.
+Interaction/tool layer
+ Regelbasert AI-modenhetstest og ROI-kalkulator i front-end. Ingen AI API i fase 1.
+SEO/schema layer
+ Metadata, canonical, sitemap, robots, JSON-LD og entity-data sentralt styrt.
+Form/integration layer
+ Kontakt-/vurderingsskjema med spamvern, samtykke og kontekst fra verktøy.
+Deploy layer
+ GitHub → preview → produksjon. Rollback og miljøvariabler.
+5. Content model
+Bør ha disse datatypene:
+Pages
+Services
+Tools
+FAQ
+CTA
+Trust/entity
+Schema data
+Proof flags
+Legal/privacy notes
+Form field definitions
+Disclaimers
+Internal links
+Navigation/footer
+Viktig: proof flags må kunne blokkere publisering av udokumenterte påstander.
+6. Page / route model
+Fase 1:
+/ — hovedposisjon / praktisk digital vekst
+/webutvikling — webutvikling med forretningsfokus
+/praktisk-ai — praktisk AI for SMB
+/ai-modenhetstest — interaktiv test
+/roi-kalkulator — interaktiv kalkulator
+/om-altibedrift — entity, HAUT FORVALTING AS, tillit
+/kontakt — digital vurdering / samtale
+7. AI-modenhetstest teknisk modell
+Modelleres som regelbasert test:
+spørsmål
+svaralternativer
+poeng
+kategori
+modenhetsnivå
+anbefalt neste steg
+forbehold
+CTA
+Resultat skal formuleres som indikasjon, ikke diagnose.
+ Ikke bruk garanti, fasit eller påstand om sikker effekt.
+Eksempel output-type:
+Lav modenhet: “Start med kartlegging”
+Middels modenhet: “Prioriter praktisk bruk”
+Høyere modenhet: “Vurder systematisering og automatisering”
+Accessibility:
+tastaturnavigasjon
+tydelige steg
+lesbare resultatkort
+ARIA live-region for resultat
+ingen informasjon kun via farge
+8. ROI-kalkulator teknisk modell
+Modelleres med:
+bransje / scenario
+nåværende månedlig verdi
+trafikk/leads/kunder
+antatt forbedringsrom
+kostnadsnivå
+estimert potensial
+usikkerhetsnivå
+forbehold
+CTA
+Output skal være scenarioestimat, ikke garanti.
+Må ha tydelig tekst:
+“Dette er et forenklet estimat basert på oppgitte tall. Det er ikke en garanti for resultat.”
+9. Kontakt / digital vurdering teknisk modell
+Felter:
+navn
+bedrift
+e-post
+telefon valgfritt
+nettside
+hva gjelder henvendelsen
+ønsket hjelp: web / AI / strategi / usikker
+melding
+samtykke/personvern
+skjult verktøykontekst hvis bruker kom fra test/kalkulator
+Spamvern:
+honeypot
+tidsvalidering
+rate limiting via form-leverandør
+server-side validering hvis backend brukes
+reCAPTCHA/Turnstile kun hvis nødvendig
+Ikke lagre mer enn nødvendig. Ikke lagre sensitive vurderingsdata unødvendig.
+10. SEO/AEO teknisk modell
+Må støtte:
+title og meta description per side
+canonical
+Open Graph
+sitemap.xml
+robots.txt
+BreadcrumbList
+Organization
+WebSite
+Service
+FAQPage der FAQ faktisk vises
+WebApplication eller SoftwareApplication for verktøy
+LocalBusiness kun hvis adresse er avklart
+Entity-regel:
+Bruk kun HAUT FORVALTING AS
+Bruk kun org.nr. 931 603 760
+Ikke bruk org.nr. 926 873 954
+11. Motion / SVG teknisk modell
+Bruk lett CSS-motion og inline SVG.
+Prinsipper:
+ingen tunge animasjonsbibliotek i fase 1
+ingen layout shift
+motion kun for orientering, progresjon og feedback
+støtte prefers-reduced-motion
+hover/focus-effekter må være rolige
+SVG skal være forklarende, ikke pyntete AI-effekter
+12. Performance-plan
+Mål:
+statisk HTML først
+minimalt JS
+lazy loading av bilder
+moderne bildeformater
+lokale/systemfonter eller svært kontrollert fontlasting
+kritisk CSS tidlig
+ingen unødvendige tredjepartsscripts
+caching på CDN
+interaktive komponenter hydreres kun der de trengs
+JS-budsjett: lavt. Verktøyene skal ikke dra hele siden over i webapp-modus.
+13. Accessibility-plan
+Krav:
+én tydelig H1 per side
+logisk headingstruktur
+ekte labels på skjema
+gode feilmeldinger
+synlige focus states
+tastaturstøtte
+kontrastkontroll
+reduced motion
+resultatkort som kan leses av skjermleser
+CTA-er som er lenker/knapper med riktig semantikk
+14. Security / privacy-plan
+Må håndtere:
+skjema-validering
+spamvern
+minimalt med persondata
+tydelig personverntekst
+cookie-/analytics-samtykke
+ingen unødvendig logging av verktøydata
+begrens tredjepartsscripts
+CSP senere i QA/security
+miljøvariabler for form/API-nøkler
+Verktøydata bør i fase 1 primært brukes i brukerens økt og eventuelt sendes med skjema kun ved aktiv innsending.
+15. Deploy- og vedlikeholdsmodell
+Anbefalt:
+GitHub repo
+Vercel eller Netlify
+preview deployments
+production branch
+enkel rollback
+miljøvariabler for skjema/analytics
+manuell publiseringssjekk før production
+content/proof flags kontrolleres før deploy
+Hostinger kan brukes for enkel statisk hosting, men Vercel/Netlify gir bedre preview, rollback og utviklerflyt.
+16. Hva som ikke skal bygges i fase 1
+Ikke bygg:
+kundeportal
+innlogging
+database
+CMS
+headless CMS
+WordPress
+AI API
+e-handel
+brukerprofiler
+tung backend
+avansert dashboard
+komplekst animasjonssystem
+lokale landingssidematriser
+casebibliotek uten godkjenning
+17. Handoff til Cursor Build Architect
+Agent 12 skal bygge:
+Astro/TypeScript-basert statisk/hybrid nettsted
+7 ruter
+content/data-modell
+schema-moduler
+AI-modenhetstest som regelbasert verktøy
+ROI-kalkulator som scenarioverktøy
+kontakt/vurderingsskjema
+proof flag-system
+reduced motion-støtte
+semantisk HTML og accessibility baseline
+Ikke bygg produksjonslogikk som krever database eller AI API i første versjon.
+18. Handoff til QA / Launch Audit
+QA må teste spesielt:
+org.nr. kun 931 603 760
+ingen Google-rating uten verifisering
+ingen antall anmeldelser uten verifisering
+ingen cases uten godkjenning
+ingen adresse før 16 / 16A er avklart
+ingen ROI-garanti
+schema-validering
+sitemap/robots/canonical
+mobilhastighet
+keyboard navigation
+skjema/spamvern
+reduced motion
+Core Web Vitals
+19. Handoff til IP / Security senere
+Agent 14 må kontrollere:
+eierskap til kode, innhold, SVG og design
+tredjepartsavhengigheter
+lisensstatus
+skjema- og personvernflyt
+analytics/cookie-samtykke
+CSP
+dataminimering
+proof/publiseringssperrer
+juridisk entity-bruk
+konfidensiell arkitekturmerking
+20. Klarhetsstatus
+Klar til Cursor Build Architect: JA
+Krever Visual/Motion-revisjon: NEI
+Krever Content-revisjon: NEI
+Krever SEO/AEO-revisjon: NEI
+21. Endelig status
+Altibedrift bør bygges som en lett, SEO-sterk digital eiendom med interaktive beslutningsverktøy, ikke som en tung webapp. Astro + TypeScript er anbefalt teknisk retning for fase 1.
+© Haut Forvalting AS (Org.nr. 931 603 760) — Altibedrift.
+ Konfidensiell arkitektur/arbeidsdokument. Uautorisert kopiering/distribusjon forbudt.
